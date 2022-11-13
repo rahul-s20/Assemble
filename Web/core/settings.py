@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts.apps.AccountsConfig'
+    'accounts.apps.AccountsConfig',
+    'messenger.apps.MessengerConfig'
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
@@ -86,7 +87,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gather_dev',
+        'NAME': 'assemble_dev',
         'USER': 'postgres',
         'PASSWORD': '123456789',
         'HOST': 'localhost',
